@@ -1,0 +1,72 @@
+// Font Face Regular
+@font-face {
+	font-family: 'Bebas Neue';
+	font-weight: 400;
+	src: url("../../fonts/bebas_neue/BebasNeue Regular.otf") format('opentype');
+}
+
+// Font Face Bold
+@font-face {
+	font-family: 'Bebas Neue Bold';
+	src: url('../../fonts/bebas_neue/BebasNeue Bold.otf') format('opentype');
+	font-weight: 800;
+}
+
+// font thin
+@font-face {
+	font-family: 'Bebas Neue Thin';
+	font-weight: 300;
+	src: url('../../fonts/bebas_neue/BebasNeue Light.otf') format('opentype');
+}
+
+$bg-color: #000;
+$mn-font--thin: 'Bebas Neue Thin', sans-serif;
+$mn-font--regular: 'Bebas Neue', sans-serif;
+$mn-font--bold: 'Bebas Neue Bold', sans-serif; 
+
+$mn-color: #FFF;
+$ac-color: #977869;
+$sc-color: #858585;
+
+@import 'sub-header/sub-header';
+@import 'header/header';
+@import 'store/store';
+@import 'collections/collections';
+@import 'brand/brand';
+
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	font-family: $mn-font--regular;
+	color: $mn-color;
+}
+
+a {
+	text-decoration: none;
+	color: $mn-color;
+}
+
+:root {
+	font {
+		size: 0.875em;
+	}
+
+	background-color: $bg-color;
+}
+
+ul {
+	list-style: none;
+}
+
+*[class^="fas"] {
+	font-size: 18px;
+}
+
+.container {
+	width: 1550px;
+	margin: 0px auto;
+	padding: 0px 30px;
+}
+
+
